@@ -9,6 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 // DEV
+app.get('/seed', seed)
 app.post('/seed', seed)
 
 // COUNTRIES
